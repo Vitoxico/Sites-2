@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+<rect width="1200" height="700" fill="#edf4fb"/>
+<path d="M90 130 C220 70, 350 170, 480 120 S760 70, 890 160 S1050 270, 1110 170" fill="none" stroke="#c5d8ea" stroke-width="28" stroke-linecap="round"/>
+<path d="M160 520 C260 430, 360 600, 470 510 S690 390, 820 500 S1030 590, 1090 490" fill="none" stroke="#d7e6f3" stroke-width="24" stroke-linecap="round"/>
+<circle cx="620" cy="330" r="26" fill="#1f5fa8"/>
+<circle cx="620" cy="330" r="54" fill="#1f5fa8" opacity=".15"/>
+<text x="660" y="340" fill="#0f2744" font-size="42" font-family="Arial" font-weight="700">Duisburg</text>
+<rect x="210" y="210" width="140" height="70" rx="14" fill="#ffffff"/>
+<text x="240" y="255" fill="#48627b" font-size="30" font-family="Arial">NRW</text>
+<rect x="820" y="220" width="180" height="70" rx="14" fill="#ffffff"/>
+<text x="852" y="264" fill="#48627b" font-size="30" font-family="Arial">Germany</text>
+<rect x="420" y="500" width="260" height="70" rx="14" fill="#ffffff"/>
+<text x="450" y="545" fill="#48627b" font-size="30" font-family="Arial">Central Europe</text>
+</svg>

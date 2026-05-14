@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+<rect width="1200" height="700" fill="#eef4fa"/>
+<rect x="220" y="100" width="760" height="500" rx="26" fill="#ffffff"/>
+<rect x="280" y="180" width="480" height="26" rx="10" fill="#1f5fa8"/>
+<rect x="280" y="240" width="620" height="18" rx="8" fill="#9bb6d1"/>
+<rect x="280" y="290" width="560" height="18" rx="8" fill="#9bb6d1"/>
+<rect x="280" y="340" width="520" height="18" rx="8" fill="#9bb6d1"/>
+<rect x="280" y="390" width="410" height="18" rx="8" fill="#9bb6d1"/>
+<rect x="740" y="420" width="150" height="80" rx="14" fill="#e7f0ff" stroke="#1f5fa8" stroke-width="4"/>
+<text x="765" y="470" fill="#1f5fa8" font-size="34" font-family="Arial" font-weight="700">OK</text>
+</svg>
