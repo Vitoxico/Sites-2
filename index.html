@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,10 +6,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Logistics Company in Duisburg | Yuxinou Germany</title>
   <meta name="description" content="Integrated China-Europe logistics, warehousing, customs support, transport coordination, and distribution from Duisburg.">
+  <meta name="theme-color" content="#0b1530">
   <meta property="og:title" content="Logistics Company in Duisburg | Yuxinou Germany">
   <meta property="og:description" content="One-stop China-Europe logistics partner with warehouse-backed execution in Duisburg.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="images/hero.svg">
+  <meta property="og:image" content="images/hero.webp">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="assets/style.css">
   <script defer src="assets/site.js"></script>
@@ -34,23 +36,30 @@
 </head>
 <body>
   <div class="topbar">
-    <div class="container">
+    <div class="container topbar-inner">
       <span>+49 2065 906980</span>
       <span>info@yuxinou.de</span>
       <span>Monday-Friday, 7:00 AM-6:00 PM</span>
     </div>
   </div>
 
-  <header>
+  <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#top">
+      <a class="brand" href="#top" aria-label="Yuxinou Germany homepage">
         <span class="brand-mark">Y</span>
-        <span>
-          Yuxinou Germany GmbH
+        <span class="brand-copy">
+          <strong>Yuxinou Germany GmbH</strong>
           <small>One-stop China-Europe logistics</small>
         </span>
       </a>
-      <nav>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" data-nav>
         <a href="#services">Services</a>
         <a href="#workflow">Workflow</a>
         <a href="#duisburg">Duisburg Hub</a>
@@ -58,100 +67,163 @@
         <a href="#coverage">Coverage</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="btn btn-primary" href="#contact">Request a Quote</a>
+
+      <a class="btn btn-primary header-cta" href="#contact">Request a Quote</a>
     </div>
   </header>
 
   <main id="top">
     <section class="hero">
       <div class="container hero-grid">
-        <div>
+        <div class="hero-copy" data-reveal>
           <span class="eyebrow">B2B logistics company in Duisburg, Germany</span>
-          <h1>One-Stop China-Europe Logistics from Duisburg</h1>
+          <h1>Modern China-Europe Logistics, Coordinated from Duisburg</h1>
           <p class="lead">
             Yuxinou Germany GmbH combines rail-linked cargo support, customs service, warehouse management,
             transport coordination, distribution, procurement support, and international trade logistics into
             one connected operational flow.
           </p>
+
+          <div class="chip-row">
+            <span class="chip">Rail-linked execution</span>
+            <span class="chip">Warehouse-backed operations</span>
+            <span class="chip">Customs & distribution support</span>
+          </div>
+
           <div class="button-row">
             <a class="btn btn-primary" href="#contact">Request a Quote</a>
             <a class="btn btn-secondary" href="#services">View Services</a>
           </div>
-          <div class="stats">
-            <div class="stat"><strong>Established</strong><span>November 16, 2017</span></div>
-            <div class="stat"><strong>Operational base</strong><span>Duisburg Logport presence</span></div>
-            <div class="stat"><strong>Coverage focus</strong><span>Germany, Central Europe, China-Europe corridor</span></div>
-            <div class="stat"><strong>Responsiveness</strong><span>24/7 stand-by service</span></div>
+
+          <div class="hero-stats">
+            <div class="stat-card">
+              <strong>Established</strong>
+              <span>November 16, 2017</span>
+            </div>
+            <div class="stat-card">
+              <strong>Operational base</strong>
+              <span>Duisburg Logport presence</span>
+            </div>
+            <div class="stat-card">
+              <strong>Coverage focus</strong>
+              <span>Germany, Central Europe, China-Europe corridor</span>
+            </div>
+            <div class="stat-card">
+              <strong>Responsiveness</strong>
+              <span>24/7 stand-by service</span>
+            </div>
           </div>
         </div>
-        <div class="hero-media">
-          <img src="images/hero.svg" alt="Industrial logistics visual for Yuxinou Germany GmbH" width="1600" height="900">
+
+        <div class="hero-visual" data-reveal>
+          <div class="hero-image-wrap">
+            <img src="images/hero.webp" alt="Yuxinou Germany logistics operations" width="1600" height="900">
+          </div>
+          <div class="floating-card">
+            <span class="floating-kicker">Duisburg logistics hub</span>
+            <strong>Arrival, storage, customs support, and release — in one operational structure.</strong>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="positioning">
-      <div class="container grid-2">
-        <div class="panel">
-          <h2>Operational positioning</h2>
-          <p>
-            The core value is not transport in isolation. The value is continuity between rail arrival, transfer handling,
-            customs coordination, warehouse intake, storage flow, and outbound distribution from Duisburg.
-          </p>
-          <p>
-            Instead of separating arrival, storage, clearance support, and onward delivery across disconnected providers,
-            Yuxinou Germany GmbH is positioned as one practical logistics partner for cross-border execution.
-          </p>
+    <section class="section section-light" id="about">
+      <div class="container about-grid">
+        <div data-reveal>
+          <div class="section-head left">
+            <span class="section-tag">Operational positioning</span>
+            <h2>Built for continuity across the critical handoff points</h2>
+            <p>
+              The value is not transport in isolation. The value is continuity between rail arrival, transfer handling,
+              customs coordination, warehouse intake, storage flow, and outbound distribution from Duisburg.
+            </p>
+          </div>
+
+          <div class="info-panels">
+            <article class="panel soft">
+              <h3>One practical logistics partner</h3>
+              <p>
+                Instead of separating arrival, storage, clearance support, and onward delivery across disconnected providers,
+                Yuxinou Germany GmbH is positioned as one practical partner for cross-border execution.
+              </p>
+            </article>
+
+            <article class="panel soft">
+              <h3>Why buyers use this model</h3>
+              <ul class="icon-list">
+                <li><span class="icon">✓</span><span>Centralize logistics operations under one contact structure</span></li>
+                <li><span class="icon">✓</span><span>Reduce handoff complexity across customs, warehousing, and transport</span></li>
+                <li><span class="icon">✓</span><span>Use Duisburg as a warehouse-backed distribution base</span></li>
+                <li><span class="icon">✓</span><span>Connect China-side and Germany-side operational follow-up</span></li>
+              </ul>
+            </article>
+          </div>
         </div>
-        <div class="panel">
-          <h2>Why buyers use this model</h2>
-          <ul class="icon-list">
-            <li><span class="icon">✓</span><span>Centralize logistics operations under one contact structure</span></li>
-            <li><span class="icon">✓</span><span>Reduce handoff complexity across customs, warehousing, and transport</span></li>
-            <li><span class="icon">✓</span><span>Use Duisburg as a warehouse-backed distribution base</span></li>
-            <li><span class="icon">✓</span><span>Connect China-side and Germany-side operational follow-up</span></li>
-          </ul>
+
+        <div class="about-visual" data-reveal>
+          <div class="image-card">
+            <img src="images/warehouse.webp" alt="Warehouse operations in Duisburg" width="1600" height="900" loading="lazy">
+          </div>
+          <div class="mini-metrics">
+            <div class="mini-metric">
+              <strong>01</strong>
+              <span>Warehouse intake and storage flow</span>
+            </div>
+            <div class="mini-metric">
+              <strong>02</strong>
+              <span>Customs-related coordination</span>
+            </div>
+            <div class="mini-metric">
+              <strong>03</strong>
+              <span>Release into Germany and Central Europe</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section alt" id="services">
+    <section class="section section-alt" id="services">
       <div class="container">
-        <div class="section-head">
-          <h2>Core services</h2>
+        <div class="section-head center" data-reveal>
+          <span class="section-tag">Core services</span>
+          <h2>Professional service scope for cross-border execution</h2>
           <p>
             Service scope reflects the confirmed business profile: rail-linked support, customs service,
             warehouse operations, transport coordination, Europe-wide distribution, procurement support,
             and international trade and e-commerce logistics.
           </p>
         </div>
+
         <div class="cards">
-          <article class="card">
-            <img src="images/rail.svg" alt="Rail-linked freight support" width="1200" height="700">
+          <article class="service-card" data-reveal>
+            <img src="images/rail.webp" alt="Rail-linked freight support" width="1200" height="700" loading="lazy">
             <div class="card-body">
               <span class="badge">Rail-linked</span>
               <h3>China-EU Block Train Operation</h3>
               <p>Coordination of cargo movement linked to the Yuxinou / China Railway Express context, with Duisburg as a practical arrival and redistribution point.</p>
             </div>
           </article>
-          <article class="card">
-            <img src="images/warehouse.svg" alt="Warehouse management operations" width="1200" height="700">
+
+          <article class="service-card" data-reveal>
+            <img src="images/warehouse.webp" alt="Warehouse management operations" width="1200" height="700" loading="lazy">
             <div class="card-body">
               <span class="badge">Warehouse</span>
               <h3>Warehouse Management</h3>
               <p>Inbound receiving, organized storage, inventory flow support, and outbound preparation from a Duisburg warehouse base.</p>
             </div>
           </article>
-          <article class="card">
-            <img src="images/customs.svg" alt="Customs documents and clearance support" width="1200" height="700">
+
+          <article class="service-card" data-reveal>
+            <img src="images/Customs.webp" alt="Customs documents and clearance support" width="1200" height="700" loading="lazy">
             <div class="card-body">
               <span class="badge">Customs</span>
               <h3>Customs Service</h3>
               <p>Customs-related process coordination and documentation support connected to warehouse and transport execution.</p>
             </div>
           </article>
-          <article class="card">
-            <img src="images/map.svg" alt="Distribution and transport coordination network" width="1200" height="700">
+
+          <article class="service-card" data-reveal>
+            <img src="images/map.webp" alt="Distribution and transport coordination network" width="1200" height="700" loading="lazy">
             <div class="card-body">
               <span class="badge">Distribution</span>
               <h3>Transport Coordination & Distribution</h3>
@@ -162,129 +234,126 @@
       </div>
     </section>
 
-    <section class="section" id="workflow">
+    <section class="section section-light" id="workflow">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head center" data-reveal>
+          <span class="section-tag">Workflow</span>
           <h2>How the one-stop workflow works</h2>
           <p>
             The strongest commercial advantage is continuity across the handoff points that usually create delays:
             origin coordination, arrival timing, customs-related handling, warehouse intake, and final distribution release.
           </p>
         </div>
-        <div class="process">
-          <div class="step">
+
+        <div class="process-grid">
+          <article class="step-card" data-reveal>
             <div class="step-num">1</div>
             <h3>Inbound planning</h3>
             <p>Align origin, cargo type, destination needs, and likely handoff points before the cargo reaches Europe.</p>
-          </div>
-          <div class="step">
+          </article>
+
+          <article class="step-card" data-reveal>
             <div class="step-num">2</div>
             <h3>Arrival & transfer</h3>
             <p>Coordinate terminal interface, cargo transfer, unloading logic, and next-step handling in Duisburg.</p>
-          </div>
-          <div class="step">
+          </article>
+
+          <article class="step-card" data-reveal>
             <div class="step-num">3</div>
             <h3>Customs & warehouse flow</h3>
             <p>Keep document readiness, customs support, and warehouse receiving aligned so cargo does not lose momentum after arrival.</p>
-          </div>
-          <div class="step">
+          </article>
+
+          <article class="step-card" data-reveal>
             <div class="step-num">4</div>
             <h3>Distribution release</h3>
             <p>Move cargo onward into Germany or Central Europe through one connected warehouse-backed dispatch structure.</p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section alt" id="duisburg">
-      <div class="container coverage">
-        <div>
-          <div class="section-head">
-            <h2>Duisburg hub advantage</h2>
+    <section class="section section-dark" id="duisburg">
+      <div class="container hub-grid">
+        <div data-reveal>
+          <div class="section-head left on-dark">
+            <span class="section-tag">Duisburg hub advantage</span>
+            <h2>A strategic base for rail-linked arrival and European release</h2>
             <p>
               Duisburg matters operationally because it supports the transition from inbound cargo to practical
               inland execution. The business profile confirms warehouse presence in Duisburg Logport by the end of 2017.
             </p>
           </div>
-          <ul class="icon-list">
+
+          <ul class="icon-list light-list">
             <li><span class="icon">→</span><span>Duisburg Logport warehouse-backed execution</span></li>
             <li><span class="icon">→</span><span>Useful interface between rail-linked arrival and European release</span></li>
             <li><span class="icon">→</span><span>Strategic NRW location bordering Belgium and the Netherlands</span></li>
             <li><span class="icon">→</span><span>Practical base for customs support, storage, and distribution</span></li>
           </ul>
         </div>
-        <div class="map-wrap">
-          <img src="images/map.svg" alt="Map-style illustration showing Duisburg, NRW, Germany, and Central Europe" width="1200" height="700">
+
+        <div class="hub-visual" data-reveal>
+          <div class="image-card dark-frame">
+            <img src="images/map.webp" alt="Map-style illustration showing Duisburg, NRW, Germany, and Central Europe" width="1200" height="700" loading="lazy">
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="trust">
+    <section class="section section-light" id="industries">
       <div class="container">
-        <div class="section-head">
-          <h2>Trust signals</h2>
-          <p>Confirmed business details that support a credible B2B logistics positioning.</p>
-        </div>
-        <div class="trust">
-          <div class="trust-item"><span class="trust-mark">✓</span><div><strong>Established in Duisburg</strong><p>November 16, 2017.</p></div></div>
-          <div class="trust-item"><span class="trust-mark">✓</span><div><strong>Duisburg Logport presence</strong><p>Warehouse presence confirmed by the end of 2017.</p></div></div>
-          <div class="trust-item"><span class="trust-mark">✓</span><div><strong>China/Germany team structure</strong><p>Professional operational team located in both China and Germany.</p></div></div>
-          <div class="trust-item"><span class="trust-mark">✓</span><div><strong>One-stop service model</strong><p>Connected flow from cargo train operation and transferring to customs service, warehouse management, and distribution.</p></div></div>
-          <div class="trust-item"><span class="trust-mark">✓</span><div><strong>Market focus</strong><p>Germany, North Rhine-Westphalia, Central Europe, and the China-Europe logistics corridor.</p></div></div>
-          <div class="trust-item"><span class="trust-mark">✓</span><div><strong>24/7 stand-by responsiveness</strong><p>Presented as strong operational availability, not as a guaranteed SLA.</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt" id="industries">
-      <div class="container">
-        <div class="section-head">
-          <h2>Industries served</h2>
+        <div class="section-head center" data-reveal>
+          <span class="section-tag">Industries served</span>
+          <h2>Structured for operational buyers and decision-makers</h2>
           <p>
-            The site messaging is built for operational buyers and decision-makers, including importers, exporters,
-            manufacturers, wholesalers, trading companies, e-commerce businesses, and supply chain teams.
+            The site messaging is built for importers, exporters, manufacturers, wholesalers, trading companies,
+            e-commerce businesses, and supply chain teams that need cleaner cross-border execution.
           </p>
         </div>
-        <div class="grid-3">
-          <div class="panel">
+
+        <div class="industry-grid">
+          <article class="panel" data-reveal>
             <h3>Import / Export Businesses</h3>
-            <p class="muted">Need customs-related coordination, warehouse intake, and onward release handled as one cross-border workflow.</p>
-          </div>
-          <div class="panel">
+            <p>Need customs-related coordination, warehouse intake, and onward release handled as one cross-border workflow.</p>
+          </article>
+          <article class="panel" data-reveal>
             <h3>Manufacturers</h3>
-            <p class="muted">Need continuity, dependable inbound coordination, and warehouse-backed stock control before use or release.</p>
-          </div>
-          <div class="panel">
+            <p>Need continuity, dependable inbound coordination, and warehouse-backed stock control before use or release.</p>
+          </article>
+          <article class="panel" data-reveal>
             <h3>Wholesalers / Distributors</h3>
-            <p class="muted">Need one stock base for multi-destination release across Germany and nearby Central European markets.</p>
-          </div>
-          <div class="panel">
+            <p>Need one stock base for multi-destination release across Germany and nearby Central European markets.</p>
+          </article>
+          <article class="panel" data-reveal>
             <h3>Trading Companies</h3>
-            <p class="muted">Need flexibility between import, storage, customs support, and redistribution into different buyer channels.</p>
-          </div>
-          <div class="panel">
+            <p>Need flexibility between import, storage, customs support, and redistribution into different buyer channels.</p>
+          </article>
+          <article class="panel" data-reveal>
             <h3>E-Commerce Businesses</h3>
-            <p class="muted">Need inbound stock handling, organized storage, and structured outbound release from Germany.</p>
-          </div>
-          <div class="panel">
+            <p>Need inbound stock handling, organized storage, and structured outbound release from Germany.</p>
+          </article>
+          <article class="panel" data-reveal>
             <h3>Supply Chain / Procurement Teams</h3>
-            <p class="muted">Need cleaner coordination between sourcing, movement, customs, warehouse handling, and final release.</p>
-          </div>
+            <p>Need cleaner coordination between sourcing, movement, customs, warehouse handling, and final release.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="coverage">
-      <div class="container">
-        <div class="section-head">
-          <h2>Market coverage</h2>
-          <p>
-            Serving Duisburg, North Rhine-Westphalia, Germany, Central Europe, and China through integrated warehouse,
-            rail, customs, and distribution support.
-          </p>
-        </div>
-        <div class="grid-2">
-          <div class="panel">
+    <section class="section section-alt" id="coverage">
+      <div class="container coverage-grid">
+        <div data-reveal>
+          <div class="section-head left">
+            <span class="section-tag">Market coverage</span>
+            <h2>Serving key logistics and distribution markets</h2>
+            <p>
+              Serving Duisburg, North Rhine-Westphalia, Germany, Central Europe, and China through integrated warehouse,
+              rail, customs, and distribution support.
+            </p>
+          </div>
+
+          <div class="panel coverage-panel">
             <h3>Primary geographic focus</h3>
             <ul class="icon-list">
               <li><span class="icon">•</span><span>Duisburg</span></li>
@@ -294,107 +363,99 @@
               <li><span class="icon">•</span><span>China-Europe logistics corridor</span></li>
             </ul>
           </div>
-          <div class="panel">
-            <h3>Why this coverage matters</h3>
-            <p>
-              For many B2B buyers, the key requirement is not only movement into Europe. It is using Duisburg as a
-              practical operational base where goods can arrive, be handled, be stored, and then move onward with fewer handoff gaps.
-            </p>
+        </div>
+
+        <div class="coverage-side" data-reveal>
+          <div class="trust-strip">
+            <div class="trust-item">
+              <strong>2017</strong>
+              <span>Established in Duisburg</span>
+            </div>
+            <div class="trust-item">
+              <strong>1 Hub</strong>
+              <span>Warehouse-backed execution base</span>
+            </div>
+            <div class="trust-item">
+              <strong>24/7</strong>
+              <span>Stand-by responsiveness</span>
+            </div>
+          </div>
+
+          <div class="quote-grid">
+            <article class="quote-card">
+              <p>“We need one location where rail arrival, customs documents, storage, and German delivery can be synchronized.”</p>
+              <strong>Typical importer requirement</strong>
+            </article>
+            <article class="quote-card">
+              <p>“Our priority is one German hub that can release stock into several nearby countries without rebuilding the workflow each time.”</p>
+              <strong>Cross-border trading requirement</strong>
+            </article>
+            <article class="quote-card">
+              <p>“We use NRW because it keeps access to the Rhine-Ruhr economy and nearby Benelux lanes in one operating geography.”</p>
+              <strong>Representative distribution requirement</strong>
+            </article>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section alt" id="testimonials">
-      <div class="container">
-        <div class="section-head">
-          <h2>Representative buyer needs</h2>
-          <p>These are positioning-oriented examples derived from the business profile, not named client endorsements.</p>
-        </div>
-        <div class="testimonials">
-          <div class="testimonial">
-            <p>“We need one location where rail arrival, customs documents, storage, and German delivery can be synchronized.”</p>
-            <strong>Typical importer requirement</strong>
-          </div>
-          <div class="testimonial">
-            <p>“Our priority is one German hub that can release stock into several nearby countries without rebuilding the workflow each time.”</p>
-            <strong>Cross-border trading requirement</strong>
-          </div>
-          <div class="testimonial">
-            <p>“We use NRW because it keeps access to the Rhine-Ruhr economy and nearby Benelux lanes in one operating geography.”</p>
-            <strong>Representative distribution requirement</strong>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="container grid-2">
-        <div class="panel">
-          <h2>About Yuxinou Germany GmbH</h2>
-          <p>
-            Yuxinou Germany GmbH was officially established on November 16, 2017 in Duisburg, Germany.
-            Its development is closely tied to the Yuxinou rail corridor and the broader China Railway Express network.
-          </p>
-          <p>
-            The company is not positioned only as a warehouse operator and not only as a transport intermediary.
-            It sits between international freight movement and local European fulfillment, helping clients bridge the gap
-            from inbound arrival to final commercial distribution.
-          </p>
-        </div>
-        <div class="panel">
-          <h2>Contact details</h2>
-          <ul class="icon-list">
-            <li><span class="icon">@</span><span>info@yuxinou.de</span></li>
-            <li><span class="icon">☎</span><span>+49 2065 906980</span></li>
-            <li><span class="icon">⌂</span><span>Marseiller Strasse No. 18, 47229 Duisburg, Germany</span></li>
-            <li><span class="icon">⏰</span><span>Monday-Friday, 7:00 AM-6:00 PM</span></li>
-            <li><span class="icon">EN</span><span>Website languages: English and German</span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <hr class="sep">
-
-    <section class="section" id="contact">
-      <div class="container quote-grid">
-        <div>
-          <div class="section-head">
+    <section class="section section-contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy" data-reveal>
+          <div class="section-head left on-dark">
+            <span class="section-tag">Contact & inquiry</span>
             <h2>Request a quote</h2>
             <p>
               Use the form below to prepare a B2B logistics inquiry. In this local static version,
               the submission opens your email client with the inquiry prefilled.
             </p>
           </div>
-          <div class="panel">
-            <h3>Useful information to include</h3>
-            <ul class="icon-list">
-              <li><span class="icon">1</span><span>Service needed</span></li>
-              <li><span class="icon">2</span><span>Origin and destination</span></li>
-              <li><span class="icon">3</span><span>Cargo type and expected volume</span></li>
-              <li><span class="icon">4</span><span>Customs, warehousing, or distribution requirements</span></li>
-            </ul>
+
+          <div class="contact-cards">
+            <article class="contact-card">
+              <h3>Useful information to include</h3>
+              <ul class="icon-list light-list">
+                <li><span class="icon">1</span><span>Service needed</span></li>
+                <li><span class="icon">2</span><span>Origin and destination</span></li>
+                <li><span class="icon">3</span><span>Cargo type and expected volume</span></li>
+                <li><span class="icon">4</span><span>Customs, warehousing, or distribution requirements</span></li>
+              </ul>
+            </article>
+
+            <article class="contact-card">
+              <h3>Direct contact</h3>
+              <ul class="icon-list light-list">
+                <li><span class="icon">@</span><span>info@yuxinou.de</span></li>
+                <li><span class="icon">☎</span><span>+49 2065 906980</span></li>
+                <li><span class="icon">⌂</span><span>Marseiller Strasse No. 18, 47229 Duisburg, Germany</span></li>
+                <li><span class="icon">⏰</span><span>Monday-Friday, 7:00 AM-6:00 PM</span></li>
+              </ul>
+            </article>
           </div>
         </div>
-        <form class="quote-form" data-quote-form>
+
+        <form class="quote-form" data-quote-form data-reveal>
           <div class="form-grid">
             <label>
               <span>Company name</span>
               <input type="text" name="companyName" required>
             </label>
+
             <label>
               <span>Contact person</span>
               <input type="text" name="contactPerson" required>
             </label>
+
             <label>
               <span>Email</span>
               <input type="email" name="email" required>
             </label>
+
             <label>
               <span>Phone</span>
               <input type="tel" name="phone">
             </label>
+
             <label>
               <span>Service needed</span>
               <select name="serviceNeeded" required>
@@ -409,32 +470,37 @@
                 <option>International Trade and E-Commerce Logistics</option>
               </select>
             </label>
+
             <label>
               <span>Origin</span>
               <input type="text" name="origin" placeholder="e.g. Chongqing, China">
             </label>
+
             <label>
               <span>Destination</span>
               <input type="text" name="destination" placeholder="e.g. Duisburg / Germany / Central Europe">
             </label>
+
             <label>
               <span>Shipment / cargo type</span>
               <input type="text" name="cargoType" placeholder="e.g. palletized goods">
             </label>
+
             <label class="full">
               <span>Message / operational notes</span>
               <textarea name="message" rows="6" placeholder="Describe the flow, timing, handoff points, customs needs, and distribution scope."></textarea>
             </label>
           </div>
+
           <button class="btn btn-primary" type="submit">Send inquiry</button>
           <div class="form-note">Recipient: info@yuxinou.de</div>
-          <div class="status"></div>
+          <div class="status" aria-live="polite"></div>
         </form>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container footer-grid">
       <div>
         <h3>Yuxinou Germany GmbH</h3>
@@ -470,7 +536,7 @@
       </div>
     </div>
     <div class="container footer-bottom">
-      © 2025 Yuxinou Germany GmbH. Static homepage bundle for local use in Chrome.
+      © <span data-year></span> Yuxinou Germany GmbH. Static homepage bundle for local use or hosting.
     </div>
   </footer>
 </body>
